@@ -31,6 +31,23 @@ var containsTwice2 = function (a,array) {
   }
 };
 console.log(containsTwice2(true,[true,true,false,false]));
+//example//
+var containsTwice4= function (a,array) {
+  var counter = 0;
+  array.forEach(function(item){
+    if (item == a){
+      counter+=1;
+    }
+  });
+  if(counter == 2){
+    return true;
+  }
+  else {
+    return false;
+  }
+};
+console.log(containsTwice4(true,[true,true,false,false]));
+
 // Generalize the previous solution into a function called `containsNTimes` so
 // that it can check for a value an arbitrary number of times.
 //
